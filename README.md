@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Please see the below how the acceptance creiteria was met:
 
 GIVEN I need to sample a potential employee's previous work, WHEN I load their portfolio, THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them:
@@ -11,3 +12,7 @@ WHEN I am presented with the developer's first application, THEN that applicatio
 WHEN I click on the images of the applications, THEN I am taken to that deployed application:
 
 WHEN I resize the page or view the site on various screens and devices, THEN I am presented with a responsive layout that adapts to my viewport: 
+=======
+# Week-2-homework
+Portfolio
+>>>>>>> f6f8ed8316e3fdeaa6fd9f370633652e74d98792
