@@ -20,8 +20,9 @@ header {
     font-size: 70px;
     color: white;
     font-weight: 100;
-    padding-right: 790px;
     text-align: center;
+    position: relative;
+    right: 60px;
 }
 
 .header nav {
@@ -34,12 +35,14 @@ header {
     justify-content: space-evenly;
     font-family: var(--font);
     list-style-type: none;
-    padding-right: 45px;
-    width: 100%;
+    padding-right: 85px;
+    width: 10;
 }
 
-.header nav:hover {
-
+.header nav :hover {
+ color:white;
+ cursor: pointer;
+ 
 }
 
 .header nav ul li {
@@ -47,6 +50,10 @@ header {
     margin-left: 45px;
     padding-top: 110px;
     right: 50px;
+}
+
+.icon {
+    display: none;
 }
 
 #Profile-Pic {
@@ -62,14 +69,15 @@ body {
 }
 
 .vl {
-    border-left: 6px solid green;
+    border-left: 6px solid rgb(27, 173, 112);
     height: 900px;
-    position: relative;
-    left: 500px;
+    position: absolute;
+    left: 270px;
+    max-width: 0;
 }
 
 #about-me {
-    width: 50%;
+    width: 20%;
    display: flex;
    justify-content: center;
    position: absolute;
@@ -79,14 +87,14 @@ body {
 }
 
 #about-me1 {
-    padding-left: 600px;
+    padding-left: 400px;
     position: absolute;
     top: 400px;
     font-family: var(--font);
     }
 
 #Work {
-    width: 50%;
+    width: 20%;
    display: flex;
    justify-content: center;
    position: absolute;
@@ -99,10 +107,9 @@ body {
     margin: 0%;
     border:rgb(18, 52, 73) solid;
     border-radius: 10%;
-    left: 600px;
-    top: 50px;
-    width: 450px;
-    height: 350px;
+    left: 400px;
+    width: 350px;
+    height: 250px;
     position: absolute;
     top: 650px;
     font-family: var(--font);
@@ -113,6 +120,7 @@ body {
     background-image: url("../Images/online-reputation-management.jpg");
     background-size: 120%;
     opacity: 0.5;
+
 }
 
 #work-box1:hover {
@@ -136,15 +144,14 @@ body {
 }
 
 #contact {
-font-size: 1.5em;
-width: 50%;
-display: flex;
-justify-content: center;
-position: absolute;
-top: 1050px;
-left: 0;
-width: 50%;
-font-family: var(--font);
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 1050px;
+    left: 0;
+    width: 20%;
+    font-family: var(--font);
 }
 
 .contact-details {
@@ -155,13 +162,56 @@ font-family: var(--font);
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
-    padding-right: 45px;
     width: 50%;
     font-size: 1.3em;
+    right: 200px;
+}
+
+.drop-down-contact {
+    display: none;
+}
+
+.contact-details :hover {
+    color: var(--limegreen);
+    cursor: pointer;
 }
 
 
+@media screen and (max-width: 1024px) {
+    * {
+        padding-bottom: 20px;
+    }
+     #about-me1 {
+        padding-left: 300px;
+     }
+     #about-me {
+        width: 30%;
+     }
+     #Work {
+        width: 30%;
+     }
+     #work-box1 {
+        left: 300px;
+        opacity: 1;
+        box-shadow: var(--shadow) darkgray;
+     }
+     #contact {
+        width: 30%;
+     }
+     .contact-details {
+         right: 120px;
+     }
 
+     .myNavigation a:not(:first-child), .dropdown .dropbtn {
+        display: none;
+      }
+      .myNavigation a.icon {
+        float: right;
+        display: block;
+      }
 
+}
+
+@media screen and (max-width: 360px){
 
 
