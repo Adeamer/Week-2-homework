@@ -201,11 +201,11 @@ body {
      }
      #contact {
         width: 30%;
-        position: relative;
+        position: relative;;
      }
      .contact-details {
         right: 120px;
-        font-size: 25px;
+        font-size: 20px;
         width: 50%;
         padding-bottom: 50px;
      }
@@ -221,41 +221,10 @@ body {
 }
 
 @media  screen and (max-width: 768){
-    * {
-        padding-bottom: 20px;
-    }
-     #about-me1 {
-        padding-left: 300px;
-     }
-     #about-me {
-        width: 30%;
-     }
-     #Work {
-        width: 30%;
-     }
-     #work-box1 {
-        left: 300px;
-        opacity: 1;
-        box-shadow: var(--shadow) darkgray;
-     }
-     #contact {
-        width: 30%;
+    #contact {
         position: relative;
-     }
-     .contact-details {
-        right: 120px;
-        font-size: 25px;
-        width: 50%;
-        padding-bottom: 50px;
-     }
-
-     .myNavigation a:not(:first-child), .dropdown .dropbtn {
-        display: none;
-      }
-      .myNavigation a.icon {
-        float: right;
-        display: block;
-      }
+    }
+    
 }
 
 @media screen and (max-width: 360px){
