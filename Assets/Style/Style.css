@@ -177,7 +177,6 @@ body {
     text-decoration: underline none;
 }
 
-
 /*CSS for Ipad Pro*/
 @media screen and (max-width: 1024px) {
     * {
@@ -186,26 +185,31 @@ body {
     #name {
         position: absolute;
         right: 130px;
+        font-size: 60px;
     }
     label {
         display: block;
         position: absolute;
         right: 5px;
+        top: 0;
         cursor: pointer;
         height: 18px;
         font-size: 50px;
         line-height: 70px;
     }
     .header nav ul li {
-        display: block;
         border: 5px solid black;
         background-color: var(--limegreen);
         padding-top: 110px;
         right: 15px;
         display: none;
     }
-    #toogle:checked + li {
+    #toogle:checked + .nav {
         display: block;
+        border: 5px solid black;
+        background-color: var(--limegreen);
+        padding-top: 110px;
+        right: 15px;
     }
     
      #about-me1 {
@@ -231,27 +235,51 @@ body {
 
 }
 
-/* CSS for Moto G4 & Galaxy S5 */
-@media screen and (max-width: 360px){
+/* CSS for Iphones */
+@media screen and (max-width: 414px){
     #name {
         font-size: 30px;
         text-align: right;
+        position: absolute;
+        left: 80px;
+        bottom: 5px;
     }
-    .header nav {
-        font-size: 5px;
-        text-align: right;
-
+    label {
+        display: block;
+        position: absolute;
+        top: 12px;
+        right: 5px;
+        cursor: pointer;
+        height: 18px;
+        font-size: 35px;
+        line-height: 70px
+    }
+    .header nav ul li {
+        border: 5px solid black;
+        background-color: var(--limegreen);
+        padding-top: 110px;
+        right: 15px;
+        display: none;
+    }
+    #toogle:checked + .header nav ul li {
+        display: block;
     }
     #about-me {
         font-size: 15px;
+        position: absolute;
+        top: 250px;
     }
     #about-me1 {
         font-size: 12px;
         right: 0;
         width: 250px;
+        position: absolute;
+        top: 250px;
     }
     #Work {
         font-size: 15px;
+        position: absolute;
+        top: 450px;
     }
     #work-box1 {
         width: 200px;
@@ -262,14 +290,24 @@ body {
         position: absolute;
         right: 120px;
         left: 150px;
+        top: 500px;
     }
     #contact {
         font-size: 15px;
-        top: 50;
+        position: absolute;
+        top: 750px;
+        left: 20px;
+    }
+    .contact-details {
+        position: absolute;
+        top: 750px;
+        right: 50px;
+        font-size: 13px;
     }
     .vl {
-        height: 650px;
-        left: 100px;
+        height: 550px;
+        left: 120px;
         position: absolute;
+        top: 250px;
     }
 }
