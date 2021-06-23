@@ -13,3 +13,6 @@ WHEN I click on the images of the applications, THEN I am taken to that deployed
 WHEN I resize the page or view the site on various screens and devices, THEN I am presented with a responsive layout that adapts to my viewport: This was done by adding @media queries and moving each part to fit and work for each device.
 
 Note: I tried to made drop down box for tablets and mob mobile devices but couldnt figure out how to make the box work when click to show the drop down menu. I found a usefull video that does it with just CSS but I had no luck with finding the correct path for the :checked tag.
+
+
+URL: https://adeamer.github.io/Week-2-homework/
