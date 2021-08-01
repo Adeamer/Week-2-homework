@@ -1,4 +1,4 @@
-# Week - Professional Portfolio
+# Professional Portfolio
 
 Please see the below how the acceptance creiteria was met:
 
